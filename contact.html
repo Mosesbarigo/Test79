@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial-
+        scale=1.0">
+    <Title>Moses Barigo Website Design</Title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+     
+        <nav>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="systems.html">SYSTEMS</a></li>
+                    <li><a href="project.html">PROJECTS</a></li>
+                    <li><a href="staffs.html">STAFF</a></li>
+                    <li><a href="contact.html" class="highlighted">CONTACT</a></li><hr>
+                    <li><img src="Images/logos.PNG" style="width: 120px; height: 100px;"></li>
+                    <li><img src="Images/HV%20logo.jpg" style="width: 120px; height: 100px;"></li>
+                    
+                </ul>  
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+<section class="Sub-header7">
+        
+<br><br><br><br><br><br><br><br> <h>CONTACT</h><br>
+<h8>Enquire & get in touch</h8><br>
+</section>
+        
+<!-------about us content------------------------->
+<section class="location">
+    
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.326518328236!2d147.00592461414274!3d-6.729958167672205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x68fa1dcc41b389d3%3A0xa78ad937b312e039!2sHuonville%20Primary%20School!5e0!3m2!1sen!2spg!4v1675341070064!5m2!1sen!2spg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section> 
+
+<section class="contact-us">
+    
+    <div class="row">
+         <div class="contact-col">
+             
+             
+                    <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                    <h5>Huonville Primary School</h5>
+                    <p> P.O.Box 209</p>
+                    <p> Cassowary Road, 7th Street</p>
+                    <p> Lae, Morobe province</p>
+                    <p> Papua New Guinea</p>
+                    </span>
+                </div>
+                    
+                <div>
+                    <i class="fa fa-users fa-3x"></i> <!-- Font Awesome people icon -->
+                    <span>
+                    <h5>School Administratrion</h5>
+                    <p> Opens Monday to Friday, 8am to 4pm</p>
+                    </span>
+                </div>
+             
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                    <h5> Contacts</h5>
+                    <p> <b>Head Teacher:</b> +675 71537186</p>
+                    <p> <b>Deputy Head Teacher:</b> +675 72 238308</p>
+                    <p> <b>Administration:</b> +675 72 xxxxxx</p>
+                    </span>
+                </div>
+             
+                    <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                    <h5>Email</h5>
+                    <p> Huonvilleprimary@gmail.com</p>
+                    </span>
+                    </div>
+
+        </div>
+    </div>
+
+<div class="contact-col">
+    
+    <form action="">
+        <input type="text" placeholder="Enter Your name"required>
+        <input type="email" placeholder="Enter Email Address"required>
+        <input type="text" placeholder="Enter Your subject"required>
+        <textarea rows="8"placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+    </form><br>
+</div>
+
+ 
+</section>
+  <br>   
+  <!-------------Call To Action-------------------------------->
+    
+<section class="cta">
+    <h3>Make Huonville your choice of Primary Education in 2025</h3><br><br>
+    <h1>Enroll now</h1><br>
+    <a href="file:///C:/Users/Moses%20Barigo/Documents/Database%20&%20Systems/15.%20School%20Website/School%20Website/contact.html" class="hero-btn">CONTACT US</a> <br>
+    
+    <h5>Follow us on our Facebook pages</h5>
+   
+    <i class="fa fa-facebook" style="font-size: 20px; color: #3b5998; transition: color 0.3s ease, transform 0.3s ease; cursor: pointer;"></i>
+    <i class="fa fa-whatsapp" style="font-size: 20px; color: #25D366; transition: color 0.3s ease, transform 0.3s ease; cursor: pointer;" onclick="window.open('https://wa.me/1234567890', '_blank');"></i>
+
+         <p>Design by Moses Barigo</p>
+
+</section>
+
+<!----------------------JavaScript for Toggle Menu----------->
+<script>
+        
+     var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+        
+</script>
+    </body>
+</html>

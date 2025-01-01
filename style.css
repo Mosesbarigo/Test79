@@ -1,0 +1,1363 @@
+/*------- 1. INDEX HOME PAGE ---------------------------------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(0, 255, 0, 0.2)),url(Images/Home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.header p{
+    color: greenyellow;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 1px 1px 0px black;/*----Background shadow---*/
+    
+}
+.header h{
+    color:white;
+    font-weight: bold;
+    box-shadow: 20px;
+    text-shadow: 5px 5px 0px black;
+    font-size: 90px;
+    font-family: Britannic Bold;
+
+}
+.header h5{
+    color: darkblue;
+    font-weight: 100;
+    font-size: 18px;
+    font-family:Times New Roman;
+    
+}
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h5{
+text-align: center;
+    
+}
+.text-box h6{
+text-align: center;
+font-family: Times New Roman;
+font-size: 16px;
+text-align: left;
+font-weight: 100; 
+color: aquamarine;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid orange;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;    
+}
+.hero-btn:hover{
+    border: 1px solid grey;
+    background-color: darkred;
+    transition: 2s;
+    color: white;
+    
+}
+h1{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 5px;
+ }
+h2{
+    Color: #771;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 5px;
+}
+h3{
+    Color: grey;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 2px;
+    font-family: Arial;
+}
+h4{
+    Color: #779;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 22px;
+    padding: 5px;
+}
+/*----------------------------------------------------------------------------------*/
+
+/* Nav Container */
+nav {
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Position it at the very top */
+    left: 0;
+    width: 100%; /* Full width of the screen */
+    background-color: #333; /* Dark background */
+    z-index: 1000; /* Ensure it stays above other content */
+    padding: 10px 0; /* Padding for better spacing */
+    padding-top: 0px;
+}
+/*----------------------------------------------------------------------------------*/
+/* Navbar Links */
+.nav-links {
+    display: flex; /* Use flexbox to align the items */
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Vertically align the items */
+}
+
+.nav-links ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make the list items inline */
+}
+
+.nav-links li {
+    margin-right: 10px; /* Space out the list items */
+}
+
+.nav-links a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.nav-links a:hover {
+    background-color: #575757; /* Darken the background on hover */
+    color: orange; /* Font color */
+}
+
+/* Logo styling */
+.nav-links img {
+    width: 120px;
+    height: 85px;
+    mix-blend-mode: multiply;/*----Remove white background color---*/
+}
+
+/* Mobile Menu Button */
+.fa-bars, .fa-times {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hide menu button by default */
+}
+
+/* Show the mobile menu button on small screens */
+@media (max-width: 768px) {
+    .fa-bars {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hide the menu by default on small screens */
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%;
+        background-color: #333; /* Match navbar background */
+    }
+
+    .nav-links.active {
+        display: block; /* Show menu when active */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between items in the mobile menu */
+    }
+
+    .fa-times {
+        display: block; /* Show close button in mobile */
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.nav-links ul li a{
+    color: darkslategray;
+    text-decoration-color: none;
+    text-decoration: none;
+    font-size: 25px; /* Font size */
+    font-family:Arial;
+    font-weight: 600;
+    box-shadow: 5px;
+    text-shadow: 1px 1px 0px black;
+    padding: 15px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+
+}
+
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+    font-size: 30px;
+        
+}
+.nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;  
+    }
+}
+/*------------------------------------------------------------------------------------------------------*/
+ul {
+    background: lightgreen;
+    
+    width: 100%;
+    height: 100%;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    justify-content: left;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+
+ul h4{
+    background-color: darkslategrey;
+    font-size: 14px;
+    font-family: cursive;
+    color: white;
+}
+
+
+
+/*------------------Call To Action--------------------------------------------------------------------------------------*/
+
+.cta{
+    margin:0px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),url(Images/WebTag.jpg);
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    padding top:20px;
+
+
+  }
+.cta h1{
+    color: white;
+    margin-bottom:10px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px black;
+}
+
+.cta h2{
+color: white;
+font-weight: bolder;
+text-shadow: 1px 1px 0px black;
+font-size: 40px;
+font-family:sans-serif;
+}
+
+.cta h3{
+    color:greenyellow;
+    text-shadow: 2px 2px 0px black;
+    font-weight: bold;
+}
+
+.cta h5{
+    color: gold;
+    font-size: 15px;
+    text-align: center;
+    font-family:monospace;
+}
+
+@media(max-width: 700px){
+ .cta h1{
+        font-size: 30px;
+    }
+}
+.icons p{
+    font-size: 12px;
+    font-weight: 100;
+
+}
+@media(max-width:700px){
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+
+.cta p{
+color:white;
+margin-bottom:10px;
+text-align: center;
+font-family: Arial;
+font-size: 12px;
+}
+
+
+/*------- ABOUT PAGE -----------------------------------------------------------------------*/  
+
+/* Global Reset: Better compatibility across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding/border are included in width/height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font stack */
+}
+
+/*---------------------------- Sub-header2 ----------------------------*/
+.Sub-header2 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(0, 255, 0, 0.4)), url(Images/About.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+}
+
+.Sub-header2 h {
+    font-size: 90px;
+    font-weight: bolder;
+    font-family: "Tobias Crossland", Georgia, serif;
+    text-shadow: 5px 5px 0px black;
+}
+
+.Sub-header2 h2 {
+    color: black;
+}
+
+.Sub-header2 h8 {
+    color: gold;
+    text-shadow: 2px 2px 0px grey;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Tobias Crossland", Georgia, serif;
+}
+
+/*---------------------------- School Logo and Information ----------------------------*/
+.Data1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.Data1 td {
+    text-align: left;
+    color: blue;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 18px; /* Default font size */
+}
+
+.Data1 th {
+    text-align: left;
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px; /* Default font size */
+}
+
+/* Mobile responsiveness */
+@media(max-width: 700px) {
+    .Data1 td,
+    .Data1 th {
+        font-size: 24px; /* Increased font size for better readability on mobile */
+    }
+
+    .Data1 {
+        padding: 10px; /* Add padding for better spacing on small screens */
+    }
+}
+
+/*---------------------------- History Section ----------------------------*/
+.History {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.History p {
+    font-family: Courier New;
+    font-size: 16px;
+    line-height: 1.5; /*-------Text Line Spacing--*/
+    text-align: justify;
+}
+
+.History img {
+    width: 12%;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.History h {
+    color: forestgreen;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px grey;
+    text-align: center;
+    font-family: "Tobias Crossland", Georgia, serif;
+}
+
+.History h1 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.History h2 {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.History-col h3 {
+    font-size: 20px;
+    color: black;
+    font-stretch: extra-condensed;
+    border-radius: 50px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    text-align: center;
+}
+
+.History-col h4 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: darkblue;
+}
+
+.History h5 {
+    text-align-last: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.History h6 {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.History-col img {
+    width: 50%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid brown;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+
+/*---------------------------- Media Query for Small Screens ----------------------------*/
+@media (max-width: 700px) {
+    .History {
+        font-size: auto;
+    }
+
+    .History-col img {
+        width: 60%;
+        height: auto;
+        flex-basis: auto;
+    }
+}
+
+/*---------------------------- School Data ----------------------------*/
+.SchoolData h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: darkslategrey;
+    border-radius: 10px;
+}
+
+.SchoolData p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+.SchoolData video {
+    border: 3px solid #808080; /* Light border for the video */
+}
+
+/*---------------------------- Activities ----------------------------*/
+.Activities h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: darkslategrey;
+    border-radius: 10px;
+}
+
+.Activities-col p {
+    width: 100%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+}
+
+.Activities-col h3 {
+    width: 100%;
+    margin: auto;
+    color: green;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid darkgrey;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    object-fit: cover;
+}
+
+.Activities-col img {
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid green;
+    text-align: center;
+    object-fit: cover;
+    padding: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
+    cursor: pointer;
+    transition: 400ms;
+    
+    
+}
+
+.Activities-col img:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 128, 0, 0.9); /* Glowing effect */
+    filter: brightness(1);
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+/*---------------------------- Testimonial Section ----------------------------*/
+.testimonial1,
+.testimonial2 {
+    width: 95%;
+    margin: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.testimonial1-col,
+.testimonial2-col {
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    padding-bottom: 2px;
+    border-bottom-style: inset;
+    align-items: center;
+}
+
+.testimonial1-col img,
+.testimonial2-col img {
+    width: 70px;
+    height: 70px;
+    margin-right: 0px;
+    border-radius: 50%;
+}
+
+.testimonial1-col p,
+.testimonial2-col p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.testimonial1-col h4,
+.testimonial2-col h4 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial1-col h5,
+.testimonial2-col h5 {
+    text-align: left;
+}
+
+.testimonial1-col .fa,
+.testimonial2-col .fa {
+    color: #f44336;
+}
+
+h4{
+    text-align: center;
+}
+/*--------------------3. PROJECTS PAGE-------------------------------------------------------------------------------------------------*/
+
+.Sub-header3{
+height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(0, 255, 0, 0.4)), url(Images/Project.jpg);
+background-position: cover;
+background-size: cover;
+text-align: center;
+color: black;  
+}
+
+.Sub-header3 h{
+
+font-size: 90px;
+font-weight: bolder;
+font-family: Georgia;
+text-shadow: 5px 5px 0px black;
+ } 
+
+.Sub-header3 h8{
+color: gold;
+text-shadow: 2px 2px 0px grey;
+font-size: 50px;
+font-weight: bolder;
+font-family: Tobias crossland;
+ }
+
+.Projects{
+width: 95%;
+margin: auto;
+text-align:center;
+padding-top: 30px;
+
+}
+.Projects img{    
+width: 50%;
+height: 25%;
+justify-items: center;
+margin-left: auto;
+margin-right: auto;
+border: 2px solid;
+border-color:darkseagreen;
+
+}
+
+.Projects p{
+text-align: center;
+font-size: 16px;
+color:black;
+text-align: justify;
+font-family: Arial;
+}
+
+.Projects h1{
+font-size: 20px;
+border-radius: 5px;
+color: green;
+
+border: 2px solid;
+border-color:darkgrey;
+border-spacing: inherit;
+}
+
+.Projects h3{
+    font-size: 23px;
+    font-weight: 600;
+    font-family: Arial;
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+        
+    display: inline-block;  /* Adds block-like behavior but keeps the background limited to the text */
+    padding: 2px 10px; /* Optional: add padding around the text for better appearance */
+}
+
+.Projects h4{
+    font-size: 16px;
+    font-family: Arial;
+    color: blue;
+}
+
+h{
+font-size: 50px;
+color: black;
+}
+
+h2{
+width: 100%;
+font-size: 50px;
+padding-top: 30px;
+text-align: center;   
+}
+
+p{
+font-size: 10px;
+line-height: 22px;
+padding: 10px;
+text-align: left;
+}
+
+/*--------------------3.1 PROJECTS PAGE------------------------------------------------------------------------------------------------*/
+.Fund{
+width: 100%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+display: flex;
+}
+
+.Fund-col{
+flex-basis: 80%;
+border-radius: 5px;
+margin-bottom: 5%;
+text-align: justify; 
+display: flex;
+    
+}
+
+.Fund-col img{
+width: 95%;
+height: auto;
+border-radius: 1px;
+align-content: center;
+margin-right: auto;
+margin-left: auto;
+border-bottom-style: groove;
+
+    
+cursor: pointer;
+transition: 400ms;
+
+
+ }
+.Fund-col img:hover{ /*------Make Images zoom in and Grey out-*/
+filter: brightness(1.60);
+transform: scale(1.03);
+opacity: 2;
+}
+
+.Fund-col h5{
+text-align: center;
+font-family: Arial;
+color: blue;
+font-size: 14px; 
+}
+
+.Sponsor-col img{   
+width: 10%;
+height: auto;/*Maintain aspect ratio*/
+    
+object-fit: cover;/*Ensures image fits the container while preserving quality*/
+image-rendering: auto;/*default rendering*/
+image-rendering: -webkit-optimize-contrast;/*improve contrast in webkit-based browesrs*/
+image-rendering: crisp-edges;/*better quality for scaled images*/
+    
+justify-content: space-evenly;
+border: 2px solid; 
+border-color: white;
+text-align: justify;
+flex-direction: column;
+
+    
+cursor: pointer;
+transition: 400ms;
+}
+.Sponsor-col img:hover{ /*------Make Images zoom in and Grey out-*/
+filter: brightness(1.40);
+transform: scale(1.12);
+opacity: 2;
+}
+
+h5{
+font-family: Arial Unicode;
+color: dimgrey;
+text-align: justify;
+font-size: 15px;
+line-height:1.6; /*------for spacing between letters above and below the word/sentence-*/
+}
+
+h6{   
+font-size: 20px;
+    
+}
+.Sponsor-col h6{
+text-align: left;
+font-family: Arial;
+color:goldenrod;
+font-size: 14px; 
+text-decoration: underline; /*------for underline a text-*/
+}
+
+h3{  
+font-family: Britannic Bold;
+font-size: 25px;
+color: darkblue;   
+}
+
+.Adverts h5{
+text-align: center;
+}
+
+/*--------------------3.2 PROJECTS PAGE------------------------------------------------------------------------------------------------*/
+.Classrooms{
+width: 100%;
+margin: auto;
+text-align: center;
+padding-top: 100px;
+}
+
+.Classrooms-col{
+width:90%
+margin: auto;
+border-radius: 5px;
+margin-bottom: 2%;/* Add some spacing at the bottom */
+text-align:justify; 
+display: flex;
+ }
+
+.Classrooms-col h5{
+font-family: Arial;
+color:dimgray;
+font-size: 12px;
+
+}
+
+.Classrooms-col img{
+
+width: 90%;
+margin:auto;
+height: 200px;
+border-radius: 3px;
+align-content: center;
+justify-content: space-evenly; /* Distribute images evenly across the row */
+'padding:5px; /* Add some padding for spacing */
+
+cursor: pointer;
+transition: 400ms;
+}
+.Classrooms-col img:hover{ /*------Make Images zoom in and Grey out-*/
+filter: grayscale(1.14);
+transform: scale(1.03);
+border-color: red;
+opacity: 1;
+}    
+    
+
+
+/*--------------------3.4 PROJECTS PAGE-Guard Haus-------------------------------------------------------------------------------------*/
+
+.Fund-col2 {
+    display: flex;               /* Enable flexbox layout */
+    justify-content: space-evenly; /* Distribute images evenly across the row */
+    align-items: center;          /* Vertically align images if they have different heights */
+    flex-wrap: wrap; /* Ensure the images wrap on smaller screens */
+}
+
+.Fund-col2 img {
+    width: 30%;               /* Adjust the width of the images (you can change this value as needed) */
+    margin: 10px;             /* Optional: space between images */
+    flex-wrap: wrap; /* Ensure the images wrap on smaller screens */
+
+    cursor: pointer;
+    transition: 400ms;
+}
+.Fund-col2 img:hover{ /*------Make Images zoom in and Grey out-*/
+filter: brightness(1.45);
+transform: scale(1.19);
+opacity: 1;
+}
+
+
+/*-------------------4. SYSTEMS PAGE---------------------------------------------------------------------------------------------------*/
+/*Fixing Headers*/
+
+.Sub-header4{
+height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(0, 255, 0, 0.4)), url(Images/System.jpg);
+background-position:cover;
+background-size:cover;
+text-align: center;
+color: #fff;
+}
+
+.highlighted {
+    background-color: white;
+    color: black;
+    border-radius: 5x;
+}
+.Sub-header4 h{  
+
+font-size: 90px;
+font-weight: bolder;
+font-family: Georgia;
+text-shadow: 5px 5px 0px black;
+}
+.Sub-header4 h8{
+color: gold;
+text-shadow: 2px 2px 0px grey;
+font-size: 50px;
+font-weight: bolder;
+font-family: Tobias crossland;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+h{
+    color: whitesmoke;
+    font-size: 70px;
+}
+.System h{ 
+    color: white;
+    font-size: 50px;
+    color: aliceblue;
+    padding-top: 100px; 
+}
+.System h1{
+    
+    padding-top: 2%;
+    font-size: 30px;
+    color: black;
+    font-family: Arial;
+    font-weight: 600;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about-us{
+    width: 95%;
+    margin: auto;
+    padding-top: 30px; /*Distance between the header and the First letters on the page*/ 
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    justify-content: center;
+
+}
+
+.about-col h1{
+    font-family: Arial;
+    font-weight: 600;
+    color:green;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color:darkgrey;
+    border-spacing: inherit;
+    
+}
+.about-col p{
+    font-family: Arial;
+    color: black;
+    font-size: 16px;
+}
+.about-us p{
+    font-family: Arial;
+    text-align: justify;
+    font-size: 16px;
+}
+.about-col video{
+    display: block;
+    border-radius: 5px;
+    border: 3px solid #808080; /* Light border for the video */
+}
+
+</*!-------Systems--------------------------------------------------------------------------------------------------------------------*/
+
+.icons{
+    justify-items: center;
+    align-content: center;
+}
+.System-col:hover{
+    'box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+/*--------------------5. STAFF PAGE---------------------------------------------------------------------------------------------------*/
+/* Normalize the box model for all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font and color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Sub-header5 section styling */
+.Sub-header5 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(0, 255, 0, 0.5)), url(Images/Teachers.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+    font-size: 1rem; /* Use rem for better scalability */
+}
+
+/* Header styling within Sub-header5 */
+.Sub-header5 h {
+    font-size: 5.625rem; /* 90px in rem */
+    font-weight: bolder;
+    font-family: 'Georgia', serif;
+    text-shadow: 5px 5px 0px black;
+}
+
+/* Styling for <h8> elements (might need a better element selector) */
+.Sub-header5 h8 {
+    color: gold;
+    text-shadow: 2px 2px 0px grey;
+    font-size: 3.125rem; /* 50px in rem */
+    font-weight: bolder;
+    font-family: 'Tobias Crossland', sans-serif;
+}
+
+/* Layer hover effect */
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+    border-width: thick;
+}
+
+/* Hover effect within .layer */
+.layer:hover {
+    width: 100%;
+    display: block;
+    background: rgba(60, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+/* Header inside layer */
+.layer h3 {
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.25rem; /* 20px in rem */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    background-color: black;
+    border: 2px solid;
+    transition: 0.5s;
+}
+
+/* Show the text when hovering */
+.layer:hover h3 {
+    bottom: 30%;
+    opacity: 1;
+    color: white;
+}
+
+/* Bom Section */
+.Bom {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+    font-style: 'Britanic Bold', sans-serif;
+}
+
+.Bom p {
+    font-family: Arial, sans-serif;
+    color: #777;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.Bom h1 {
+    border-radius: 50px;
+    font-size: 2.0625rem; /* 33px in rem */
+    font-weight: 600;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.Bom h3 {
+    border-radius: 5px;
+    color: darkblue;
+    font-weight: 600;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 1.5625rem; /* 25px in rem */
+  
+}
+
+/* Bom image styling */
+.Bom img {
+    width: 20%;
+    height: auto;
+    background-color: transparent;
+}
+
+/* Data2 Table */
+.Data2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.Data2 td {
+    text-align: center;
+    color: blue;
+    font-family: cursive, sans-serif;
+    font-weight: 100;
+}
+
+.Data2 th {
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1.0625rem; /* 17px */
+}
+
+.Data2 caption {
+    background-color: black;
+    font-family: 'Arial Unicode', sans-serif;
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
+    color: white;
+    border: 1px solid;
+}
+
+/* Bom-col Section- Board of Management section */
+.Bom-col {
+    display: inline-flex;
+    max-width: 13%;
+    height: auto;
+    flex-wrap: wrap-reverse;
+    margin: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Bom-col h2 {
+    font-size: 0.9375rem; /* 15px in rem */
+    font-family: Arial, sans-serif;
+    color: cadetblue;
+}
+.Bom-col h3 {
+    font-size: 0.9375rem; /* 15px in rem */
+    font-family: Arial, sans-serif;
+    color: red;
+    text-align: center;
+}
+.Bom-col h4 {
+    font-size: 0.875rem; /* 14px in rem */
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: cadetblue;
+    text-align: center;
+}
+
+.Bom-col img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    
+}
+
+/* Responsive Video */
+.responsive-video {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.responsive-video iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*-------------------7. CONTACT PAGE--------------------------------------------*/
+.Sub-header7{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(0, 255, 0, 0.4)),url(Images/Contacts.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.Sub-header7 h{
+    
+    font-size: 90px;
+    font-weight: bolder;
+    font-family: Georgia;
+    text-shadow: 5px 5px 0px black;
+     
+}
+.Sub-header7 h8{
+    color: gold;
+    text-shadow: 2px 2px 0px grey;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Tobias crossland;
+ }
+.location{
+   width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+/*------------------------------------------------------*/
+.contact-us {
+    width: 80%;
+    margin: auto;
+    display: flex; /* Use flexbox for the container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: space-between; /* Ensure space between items */
+    gap: 20px; /* Adds some space between the columns */
+    background-image: url(Images/Home.jpg); /* Add your image path here */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+    position: relative; /* For overlay effect */
+    padding: 30px; /* Padding around the content */
+}
+
+.contact-us::before {
+    content: ''; /* Create an overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: 1; /* Ensure the overlay stays behind the content */
+}
+
+.contact-col {
+    flex-basis: 45%; /* Each item takes up 45% of the container's width */
+    display: flex;
+    flex-direction: column; /* Align the content vertically within each column */
+    margin-bottom: 30px; /* Space between columns */
+    position: relative; /* Ensure content stays on top of the overlay */
+    z-index: 2; /* Ensure the content stays on top of the overlay */
+}
+
+.contact-col p {
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 30px;
+    color: #f44336; /* Icon color */
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: green;
+    font-weight: 600;
+    text-align: left; /* Align the heading to the left */
+}
+
+@media (max-width: 768px) {
+    .contact-col {
+        flex-basis: 100%; /* Take up full width on smaller screens */
+    }
+}
+
+
+/*------------------------------------------------------*/
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+h1{
+color: aliceblue;
+}
+/*-------------------7. CONTACT PAGE--------------------------------------------*/
